@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proses Perkahwinan</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2a3b4c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #2a3b4c;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        select {
+            padding: 8px;
+            width: 100%;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        button {
+            background-color: #27ae60;
+            color: white;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2ecc71;
+        }
+
+        /* Diagram Display */
+        #diagramDisplay img {
+            display: none;
+            margin: 10px;
+            width: 200px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #2a3b4c;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .diagram-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .diagram-container img {
+            margin: 10px;
+        }
+
+        .download-link {
+            display: none;
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Proses Perkahwinan</h1>
+</header>
+
+<div class="container">
+    <form id="diagramForm">
+        <div class="section">
+            <h2>Lelaki</h2>
+            <label for="maleQuestion1">TARAF KEWARGANEGARAAN:</label>
+            <select id="maleQuestion1" name="maleQuestion1">
+                <option value="">--Pilih pilihan--</option>
+                <option value="warganegara">Warganegara</option>
+                <option value="bukan">Bukan Warganegara</option>
+            </select><br><br>
+
+            <label for="maleQuestion2">TARAF PERMAUSTATINAN:</label>
+            <select id="maleQuestion2" name="maleQuestion2">
+                <option value="">--Pilih pilihan--</option>
+                <option value="bermaustatin">Bermaustatin</option>
+                <option value="tidak">Tidak Bermaustatin</option>
+            </select><br><br>
+        </div>
+
+        <div class="section">
+            <h2>Perempuan</h2>
+            <label for="femaleQuestion1">TARAF KEWARGANEGARAAN:</label>
+            <select id="femaleQuestion1" name="femaleQuestion1">
+                <option value="">--Pilih pilihan--</option>
+                <option value="warganegara">Warganegara</option>
+                <option value="bukan">Bukan Warganegara</option>
+            </select><br><br>
+
+            <label for="femaleQuestion2">TARAF PERMAUSTATINAN:</label>
+            <select id="femaleQuestion2" name="femaleQuestion2">
+                <option value="">--Pilih pilihan--</option>
+                <option value="bermaustatin">Bermaustatin</option>
+                <option value="tidak">Tidak Bermaustatin</option>
+            </select><br><br>
+        </div>
+
+        <button type="button" onclick="showDiagram()">Hantar</button>
+    </form>
+
+    <div class="section">
+        <h2>Paparan Diagram:</h2>
+        <div id="diagramDisplay" class="diagram-container">
+            <img id="diagram1" src="https://via.placeholder.com/200?text=Diagram+1" alt="Diagram 1">
+            <img id="diagram2" src="https://via.placeholder.com/200?text=Diagram+2" alt="Diagram 2">
+            <img id="diagram3" src="https://via.placeholder.com/200?text=Diagram+3" alt="Diagram 3">
+            <img id="diagram4" src="https://via.placeholder.com/200?text=Diagram+4" alt="Diagram 4">
+            <img id="diagram5" src="https://via.placeholder.com/200?text=Diagram+5" alt="Diagram 5">
+            <img id="diagram6" src="https://via.placeholder.com/200?text=Diagram+6" alt="Diagram 6">
+            <img id="diagram7" src="https://via.placeholder.com/200?text=Diagram+7" alt="Diagram 7">
+            <img id="diagram8" src="https://via.placeholder.com/200?text=Diagram+8" alt="Diagram 8">
+            <img id="diagram9" src="https://via.placeholder.com/200?text=Diagram+9" alt="Diagram 9">
+            <img id="diagram10" src="https://via.placeholder.com/200?text=Diagram+10" alt="Diagram 10">
+            <img id="diagram11" src="https://via.placeholder.com/200?text=Diagram+11" alt="Diagram 11">
+            <img id="diagram12" src="https://via.placeholder.com/200?text=Diagram+12" alt="Diagram 12">
+            <img id="diagram13" src="https://via.placeholder.com/200?text=Diagram+13" alt="Diagram 13">
+            <img id="diagram14" src="https://via.placeholder.com/200?text=Diagram+14" alt="Diagram 14">
+            <img id="diagram15" src="https://via.placeholder.com/200?text=Diagram+15" alt="Diagram 15">
+            <img id="diagram16" src="https://via.placeholder.com/200?text=Diagram+16" alt="Diagram 16">
+        </div>
+    </div>
+
+    <div id="downloadLinks">
+        <a id="downloadLink1" class="download-link" href="https://via.placeholder.com/200?text=Diagram+1" download>Download Diagram 1</a>
+        <a id="downloadLink2" class="download-link" href="https://via.placeholder.com/200?text=Diagram+2" download>Download Diagram 2</a>
+        <a id="downloadLink3" class="download-link" href="https://via.placeholder.com/200?text=Diagram+3" download>Download Diagram 3</a>
+        <!-- Add other download links as needed -->
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 HakimHebat. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // JavaScript function to show the appropriate diagram or pop-up message based on selected answers
+    function showDiagram() {
+        const maleAnswer1 = document.getElementById("maleQuestion1").value;
+        const maleAnswer2 = document.getElementById("maleQuestion2").value;
+        const femaleAnswer1 = document.getElementById("femaleQuestion1").value;
+        const femaleAnswer2 = document.getElementById("femaleQuestion2").value;
+
+        // Hide all diagrams and download links initially
+        document.querySelectorAll("#diagramDisplay img").forEach(img => img.style.display = "none");
+        document.querySelectorAll(".download-link").forEach(link => link.style.display = "none");
+
+        // Check if both Lelaki and Perempuan are "Bukan Warganegara"
+        if (maleAnswer1 === "bukan" && femaleAnswer1 === "bukan") {
+            alert("PERKAHWINAN TIDAK BOLEH DIDAFTARKAN");
+            return; // Stop further execution if the condition is met
+        }
+
+        // Determine which diagram to show based on combined male and female answers
+        const combination = `${maleAnswer1}-${maleAnswer2}-${femaleAnswer1}-${femaleAnswer2}`;
+        switch (combination) {
+            case "warganegara-bermaustatin-warganegara-bermaustatin":
+                document.getElementById("diagram1").style.display = "block";
+                document.getElementById("downloadLink1").style.display = "block"; break;
+            case "warganegara-bermaustatin-warganegara-tidak":
+                document.getElementById("diagram2").style.display = "block";
+                document.getElementById("downloadLink2").style.display = "block"; break;
+            case "warganegara-bermaustatin-bukan-bermaustatin":
+                document.getElementById("diagram3").style.display = "block";
+                document.getElementById("downloadLink3").style.display = "block"; break;
+            // Add more cases for other combinations and their corresponding diagrams and download links...
+            default:
+                alert("Tiada diagram untuk kombinasi yang dipilih.");
+        }
+    }
+</script>
+
+</body>
+</html>
